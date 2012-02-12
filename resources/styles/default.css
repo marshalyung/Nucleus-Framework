@@ -1,0 +1,403 @@
+/* 
+    Document   : default
+    Created on : Feb 15, 2010, 6:26:05 AM
+    Author     : Marshal Yung <marshal.yung@synapses.com.my>
+    Description:
+        Default stylesheet for all applications built with Nucleus Framework
+*/
+
+/* Various containers */
+.body-wrapper
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+.list-wrapper
+{
+    border: 1px solid #bbccff;
+    margin: 2px 0px;
+}
+
+.section-wrapper
+{
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: #999999;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    background-image: url(../images/dark_light_gradient.jpg);
+    border-spacing: 1px;
+    padding: 10px;
+}
+
+.footer-wrapper
+{
+    padding: 10px;
+    border-top: 1px solid #cccccc;
+    position: relative;
+    bottom: 0px;
+}
+
+.sidebar-section-wrapper
+{
+    padding: 10px;
+    max-width: 162px;
+    min-width: 162px;
+    width: 162px;
+}
+
+.big-button
+{
+    background-image: url('../images/button_bg.png');
+    border: 1px solid #cccccc;
+    height: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    color: #333333;
+    cursor: pointer;
+}
+
+#modal-window-wrapper
+{
+    background-image: url("../images/modal_background.gif");
+    position: absolute;
+    z-index: 9001;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    display: none;
+}
+
+#modal-window-contents
+{
+    position: absolute;
+    background-color: #ffffff;
+    border: 10px solid #bbccff;
+    z-index: 9002;
+    width: 850px;
+    height: 300px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+/* Picker related elements */
+.picker-window-header
+{
+    height: 15px;
+    background-color: #bbccff;
+    border-bottom: 1px solid #84A2F9;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.picker-button
+{
+    cursor: pointer;
+    float: left;
+    border: 0px;
+    margin: 2px;
+}
+
+/* universal text style */
+.normal, .th, .page-title, .list-title, .section-title, .hints, .required,
+.no-record, .label, .show-hide, .notice, .tab-text-active, .tab-text-inactive,
+.submenu-text, .links, .footer-wrapper, span, p, .tabular-data,
+.unordered-list, #modal-window-contents
+{
+    font-size: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+/* titles */
+.page-title
+{
+    font-size: 16pt;
+    color: #23314e;         /* navy blue */
+    margin-bottom: 20px;
+}
+
+.list-title
+{
+    font-size: 11pt;
+    line-height: 24px;
+    color: #2D5090;         /* ligher blue */
+}
+
+.section-title
+{
+    font-size: 12pt;
+    line-height: 30px;
+    color: #000000;
+}
+
+/* grid table */
+.tabular-data
+{
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th
+{
+    font-weight: bold;
+    color: #333333;
+    background-color: #dedede;
+    height: 28px;
+}
+
+.unordered-list
+{
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.unordered-list li
+{
+    margin-bottom: 5px;
+}
+
+table.tabular-data td
+{
+    padding: 3px;
+}
+
+/* hyperlinks */
+.links:link
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.links:visited
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.links:hover
+{
+    color: #ff9900;
+}
+
+/* tab menus: tab and font */
+.tab-menu-wrapper
+{
+    width: 100%;
+}
+
+.tab-menu
+{
+    height: 7px;
+    cursor: pointer;
+    padding: 0px 18px;
+    font-size: 10pt;
+}
+
+.tab-menu li
+{
+    display: inline;
+    margin: 0px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.tab-menu .active
+{
+    border: 1px solid #829CF0;
+    border-bottom: 0px;
+    background-color:#bbccff;
+    font-weight: bold;
+    color: #23314e;
+}
+
+.tab-menu .links
+{
+    text-decoration: none;
+    color: #444444;
+}
+
+/* secondary menus */
+.submenu-horizontal
+{
+    background-color: #bbccff;
+    border-bottom: 1px solid #bbccff;
+}
+.submenu-text
+{
+    font-size: 9.3pt;
+    color: #23314e;
+}
+
+.submenu-column
+{
+    text-align: center;
+    height: 25px;
+    padding: 10px;
+    cursor: pointer;
+    padding: 3px 10px;
+}
+
+/* hints and tooltips text */
+.hints
+{
+    font-size: 7.5pt;
+    color: #666666;
+    font-style: italic;
+}
+
+/* mandatory field label in red */
+.required
+{
+    color: #ef0e03;         /* red */
+}
+
+/* no recordset found message shown in data grid table in green */
+.no-record
+{
+    text-align: center;
+    color: #089a08;         /* green */
+}
+
+/* textarea elements */
+.large-textarea, .medium-textarea, .small-textarea
+{
+    border: 1px solid #999999;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    padding: 3px;
+}
+
+.large-textarea
+{
+    width: 99%;
+    height: 250px;
+}
+
+.medium-textarea
+{
+    width: 99%;
+    height: 100px;
+}
+
+.small-textarea
+{
+    width: 200px;
+    height: 80px;
+}
+
+/* textbox elements */
+.default, select, .max, .long, .short
+{
+    border: 1px solid #999999;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.max
+{
+    width: 100%;
+}
+
+.long
+{
+    width: 250px;
+}
+
+.short
+{
+    width: 50px;
+}
+
+/* button element */
+.button
+{
+    border: 1px solid #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    background-image: url(../images/list_header.gif);
+    color: #333333;
+    cursor: pointer;
+}
+
+/* data labels */
+.label
+{
+    text-align: left;
+    vertical-align: top;
+    color: #333333;
+}
+
+/* data fields */
+.field
+{
+    vertical-align: top;
+}
+
+/* Expand/collapse element */
+.show-hide
+{
+    color: #333333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* form validation error message */
+#msg
+{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    background: url(../images/msg_arrow.gif) left center no-repeat;
+    padding-left: 7px
+}
+
+#msgcontent
+{
+    display: block;
+    background: #f3e6e6;
+    border: 2px solid #924949;
+    border-left: none;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 250px;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    color: #666;
+}
+
+#error_block
+{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    background-color: #fc99b3;
+}
+
+/* on screen error message */
+.notice
+{
+    margin: 5px auto;
+    width: 55%;
+    padding: 5px;
+    color: #ea2121;
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+/* Icons */
+.icon
+{
+    border: 0px;
+    cursor: pointer;
+    margin-right: 2px;
+}
